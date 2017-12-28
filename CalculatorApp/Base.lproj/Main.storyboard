@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -35,9 +34,8 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="3Vb-z8-S4X" firstAttribute="trailing" secondItem="NN7-9N-WQi" secondAttribute="trailingMargin" id="5Cd-4v-uYI"/>
-                                            <constraint firstItem="3Vb-z8-S4X" firstAttribute="bottom" secondItem="NN7-9N-WQi" secondAttribute="bottomMargin" id="5kj-PX-ujf"/>
-                                            <constraint firstItem="3Vb-z8-S4X" firstAttribute="top" secondItem="NN7-9N-WQi" secondAttribute="top" constant="176" id="k6Q-or-ZZG"/>
+                                            <constraint firstItem="3Vb-z8-S4X" firstAttribute="trailing" secondItem="NN7-9N-WQi" secondAttribute="trailingMargin" id="PJy-zI-Kr1"/>
+                                            <constraint firstItem="3Vb-z8-S4X" firstAttribute="bottom" secondItem="NN7-9N-WQi" secondAttribute="bottomMargin" id="enw-Ue-Hfh"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LWK-v6-RWG">
@@ -230,8 +228,11 @@
                                                         <rect key="frame" x="0.0" y="342.5" width="375" height="84.5"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQG-g7-KYC">
-                                                                <rect key="frame" x="0.0" y="0.0" width="186.5" height="84.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="187" height="84.5"/>
                                                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="187" id="dli-Qh-c9i"/>
+                                                                </constraints>
                                                                 <state key="normal" title="0">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
@@ -240,14 +241,17 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nm1-RJ-OwH">
-                                                                <rect key="frame" x="187.5" y="0.0" width="93.5" height="84.5"/>
+                                                                <rect key="frame" x="188" y="0.0" width="94" height="84.5"/>
                                                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <state key="normal" title=",">
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="94" id="qv4-yC-wPA"/>
+                                                                </constraints>
+                                                                <state key="normal" title=".">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xoS-Os-HY4">
-                                                                <rect key="frame" x="282" y="0.0" width="93" height="84.5"/>
+                                                                <rect key="frame" x="283" y="0.0" width="92" height="84.5"/>
                                                                 <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <state key="normal" title="Enter">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -257,42 +261,34 @@
                                                                 </connections>
                                                             </button>
                                                         </subviews>
-                                                        <constraints>
-                                                            <constraint firstItem="xoS-Os-HY4" firstAttribute="width" secondItem="nm1-RJ-OwH" secondAttribute="width" id="VUc-jc-4sF"/>
-                                                            <constraint firstItem="zQG-g7-KYC" firstAttribute="width" secondItem="nm1-RJ-OwH" secondAttribute="width" multiplier="2" id="s7I-58-2LJ"/>
-                                                        </constraints>
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="QNe-7d-lpM" firstAttribute="top" secondItem="LWK-v6-RWG" secondAttribute="top" id="7R4-l3-5WD"/>
-                                            <constraint firstItem="QNe-7d-lpM" firstAttribute="leading" secondItem="LWK-v6-RWG" secondAttribute="leading" id="Use-44-ZWP"/>
-                                            <constraint firstAttribute="bottom" secondItem="QNe-7d-lpM" secondAttribute="bottom" id="Xfa-hE-b1f"/>
-                                            <constraint firstAttribute="trailing" secondItem="QNe-7d-lpM" secondAttribute="trailing" id="rqT-yU-aEh"/>
+                                            <constraint firstItem="QNe-7d-lpM" firstAttribute="top" secondItem="LWK-v6-RWG" secondAttribute="top" id="2dl-Tw-DFT"/>
+                                            <constraint firstItem="QNe-7d-lpM" firstAttribute="leading" secondItem="LWK-v6-RWG" secondAttribute="leading" id="i03-Ue-1iP"/>
+                                            <constraint firstAttribute="bottom" secondItem="QNe-7d-lpM" secondAttribute="bottom" id="sBO-hF-Swa"/>
+                                            <constraint firstAttribute="trailing" secondItem="QNe-7d-lpM" secondAttribute="trailing" id="zII-H6-osA"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="LWK-v6-RWG" firstAttribute="height" secondItem="Xzr-pi-buc" secondAttribute="height" multiplier="0.66" id="9XI-B5-xfp"/>
+                                    <constraint firstItem="LWK-v6-RWG" firstAttribute="top" secondItem="Xzr-pi-buc" secondAttribute="top" constant="220" id="bYC-gE-gsF"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Xzr-pi-buc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="B1y-47-tjy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xzr-pi-buc" secondAttribute="trailing" id="JZL-Bp-czY"/>
-                            <constraint firstItem="Xzr-pi-buc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bzP-B4-YZx"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Xzr-pi-buc" secondAttribute="bottom" id="uRD-MF-ssQ"/>
+                            <constraint firstItem="Xzr-pi-buc" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="E2B-kz-rty"/>
+                            <constraint firstItem="Xzr-pi-buc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LT2-co-eNw"/>
+                            <constraint firstItem="Xzr-pi-buc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="MRP-2j-Eeg"/>
+                            <constraint firstAttribute="trailing" secondItem="Xzr-pi-buc" secondAttribute="trailing" id="pmZ-lB-igW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="add" destination="cPv-9w-IYI" id="hyc-eh-ICn"/>
-                        <outlet property="divide" destination="2gr-DP-mJC" id="RaL-ly-3Pb"/>
-                        <outlet property="multiply" destination="U4p-11-iPP" id="fg2-ph-2EU"/>
-                        <outlet property="subtract" destination="Vfx-GO-RUf" id="ieG-AD-0rk"/>
                         <outlet property="val" destination="3Vb-z8-S4X" id="OYC-0q-rd7"/>
                     </connections>
                 </viewController>
