@@ -249,6 +249,9 @@
                                                                 <state key="normal" title=".">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="addDecimal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1at-8m-ZmO"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xoS-Os-HY4">
                                                                 <rect key="frame" x="283" y="0.0" width="92" height="84.5"/>

@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         val.text="0"
+        val.text=""
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -58,19 +59,16 @@ class ViewController: UIViewController {
         numOne=(Float)(val.text!) //convert to int
         val.text = ""
         op="M"
-
     }
     @IBAction func add(_ sender: Any) {
         numOne=(Float)(val.text!) //convert to int
         val.text = ""
         op="A"
-
     }
     @IBAction func subtract(_ sender: Any) {
         numOne=(Float)(val.text!) //convert to int
         val.text = ""
         op="S"
-
     }
     @IBOutlet weak var val: UILabel!
     //^this is the value displayed
@@ -79,9 +77,12 @@ class ViewController: UIViewController {
         val.text=""
     }
     @IBAction func negate(_ sender: Any) {
-        //add a - to beginning
+        val.text = "-\(val.text!)"
     }
     
+    @IBAction func addDecimal(_ sender: Any) {
+        val.text = (val.text!) + "."
+    }
     @IBAction func enter(_ sender: Any) {
     numtwo=Float(val.text!)
         returnVal = calcresult(num1:numOne, num2:numtwo, op:op)
